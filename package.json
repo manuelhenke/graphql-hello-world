@@ -1,0 +1,21 @@
+{
+  "name": "graphql-hello-world",
+  "version": "0.0.1",
+  "author": "Manuel Henke",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "in-workspaces": "workspaces-run --parallel -- npm run",
+    "build": "npm run in-workspaces -- build",
+    "start": "npm run in-workspaces -- start",
+    "dev": "npm run in-workspaces -- dev",
+    "test": "npm run in-workspaces -- test"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "workspaces-run": "^1.0.2"
+  }
+}
